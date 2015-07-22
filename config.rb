@@ -143,9 +143,9 @@ activate :deploy do |deploy|
 
   # Uncomment following 3 lines to deploy to GH pages on master commits
   #
-  # if ENV['TRAVIS']
-  #   deploy.remote   = "https://#{ENV['GH_TOKEN']}:@github.com/#{ENV['TRAVIS_REPO_SLUG']}.git"
-  # end
+  if ENV['TRAVIS']
+    deploy.remote   = "https://#{ENV['GH_TOKEN']}:@github.com/#{ENV['TRAVIS_REPO_SLUG']}.git"
+  end
 
   # Optional Settings
   # deploy.build_before = true # always run 'build' before a deploy
