@@ -16,7 +16,7 @@ script:
 after_success:
 - git config --global user.email ""
 - git config --global user.name ""
-- test $TRAVIS_PULL_REQUEST == 'false' && test $TRAVIS_BRANCH == 'master' && bundle exec middleman deploy [--quiet]
+- test $TRAVIS_PULL_REQUEST == 'false' && test $TRAVIS_BRANCH == 'master' && bundle exec middleman deploy > /dev/null 2>&1
 env:
   global:
     secure: dW8Lq1PMYT2XoqOr797GNKikJTEN2PGuNb0Rl5f/1TuTw0Tzy1gja4TEw4Y7qkXmhRIVSr624/9wm0y6aO4cqv6Vo3aw3nw8VBdUBGMLeEaKR4RUOh+NlT3N9N10iA7dA8xAztwEPa9hSZc6cgSvmn7OSkvZ/NOcZGA2avF99z+pm4U66QTeHJ7DF+uQFFQOWU9j7UVbpT3ztAVROXMmjHhuCqhvcMaM9GTWMPS7os7ZOHBJ/Kp+2Cwbv97VBC/EAoGnh+CVoeWyPO+9s0ObdNREJHkdN2d+G74w8UFGvQCFpfjf2IbM+f8FrfehRKt3C6gqqcqeJ+KMBH2KNSMjeRYTtwg6/ybToRUBswtesDKSx5xRz3ARHkNlgGJRCxk4VFTVsSgLV53gNDj7G/cOeDDVW+FHlZzwUc6pXL0uwsInCIxn32XMvUbJVOtrd2K8E5uDf7CxRUk4QmVgbXr+/BrfSPuVlpAGFu4mxMGf+aoKdVWZW8Zr8hY01O5DDIAqZpn1wN1HHG/40sRuvOv10/g7wS8U5Xezz5IXxwhhPp7g90lR4Stf6d5t1TSlhSK94/Bjs48UB/yUv+nfR8nqhH92qeM7aY5VlGD9fy5Mlbm+KQCLaOsCgqijWd3Cv7Be2sju11Inc7AHYiS0N/ehlXgpXmlop4RJMz4cjLDPlzs=
