@@ -1,6 +1,6 @@
 ---
 layout: post
-itle:  "Welcome to Jekyll!"
+itle:  "Welcome to myblog!"
 date:   2015-07-20 15:26:11
 categories: []
 ---
